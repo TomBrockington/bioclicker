@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+
+}
+
+/* BODY IS CONTAINING GRID */
+
+body {
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+/* HEADER */
+
+header {
+    background-color: red;
+    height: 50px;
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    padding-left: 1rem;
+}
+
+/* HEADER NAVIGATION */
+
+.nav-bar-top {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: end;
+    text-align: center;
+    gap: 2rem;
+    padding-right: 1rem;
+}
+
+
+.nav-bar-top li {
+    list-style-type: none;
+}
+
+/* MAIN GAME */
+
+main {
+    background-color: blue;
+    
+}
