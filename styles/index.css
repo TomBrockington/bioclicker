@@ -5,15 +5,10 @@
     font-family: sans-serif;
 }
 
-:root {
-
-}
-
 /* BODY IS CONTAINING GRID */
 
 body {
     height: 100vh;
-
     display: grid;
     grid-template-rows: auto 1fr;
 }
@@ -22,17 +17,15 @@ body {
 
 header {
     background-color: red;
-    height: 50px;
     
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 1rem;
+
+    padding: 0.5rem;
 }
 
-header h1 {
-    padding-left: 1rem;
-}
 
 /* HEADER NAVIGATION */
 
@@ -55,4 +48,81 @@ header h1 {
 main {
     background-color: blue;
     
+    display: grid;
+    grid-template: 
+        "left-menu game-screen right-menu" 2fr
+        "level power-up advert " 1fr /
+        400px 1fr 400px
+    ;
+}
+
+/* LEFT ITEMS BAR */
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: pink;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.left-items {
+    background-color: rgb(71, 194, 118);
+    height: auto;
+    border-radius: 8px;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr
+}
+
+.building {
+    background-color: ;
+}
+
+/* RIGHT ITEMS BAR */
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: brown;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.right-items {
+    background-color: hotpink;
+    height: 100%;
+
+    border-radius: 8px;
+}
+
+/* MAIN GAME - CENTER */
+
+.game-screen {
+    grid-area: game-screen;
+    background-color: chartreuse;
+    height: 100%;
+}
+
+/* LEVEL */
+
+.level {
+    grid-area: level;
+    background-color: darkgoldenrod;
+    height: 100%;
+}
+
+/* POWER UPS */
+
+.power-up {
+    grid-area: power-up;
+    background-color: darkmagenta;
+    height: 100%;
+}
+
+/* ADVERT */
+
+.advert {
+    grid-area: advert;
+    background-color: deeppink;
+    height: 100%;
 }
